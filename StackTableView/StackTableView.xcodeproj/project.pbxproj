@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8357867520DC319100F93955 /* UIColor+OnePixelImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357867420DC319100F93955 /* UIColor+OnePixelImage.swift */; };
+		8357867A20DC338800F93955 /* StackTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357867320DC315700F93955 /* StackTableView.swift */; };
+		8357867B20DC338B00F93955 /* StackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357866920DC315700F93955 /* StackTableViewController.swift */; };
+		8357867C20DC338D00F93955 /* StackTableViewBasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357866520DC315700F93955 /* StackTableViewBasicCell.swift */; };
+		8357867D20DC338F00F93955 /* StackTableViewSelectableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357866620DC315700F93955 /* StackTableViewSelectableCell.swift */; };
+		8357867E20DC339100F93955 /* StackTableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357866720DC315700F93955 /* StackTableViewSection.swift */; };
+		8357867F20DC339300F93955 /* StackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357866820DC315700F93955 /* StackTableViewCell.swift */; };
+		8357868020DC339400F93955 /* StackTableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357866B20DC315700F93955 /* StackTableViewHeaderFooterView.swift */; };
+		8357868120DC339600F93955 /* StackTableViewSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357866C20DC315700F93955 /* StackTableViewSeparator.swift */; };
+		8357868220DC339800F93955 /* StackTableViewSpacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357866D20DC315700F93955 /* StackTableViewSpacer.swift */; };
+		8357868320DC339A00F93955 /* UIStackView+RemoveArrangedSubviewsFromSuperview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357866F20DC315700F93955 /* UIStackView+RemoveArrangedSubviewsFromSuperview.swift */; };
+		8357868420DC339C00F93955 /* UIView+EdgeConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357867020DC315700F93955 /* UIView+EdgeConstraints.swift */; };
+		8357868520DC339E00F93955 /* STVTouchthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357867120DC315700F93955 /* STVTouchthroughView.swift */; };
+		8357868620DC33A000F93955 /* UIColor+Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357867220DC315700F93955 /* UIColor+Palette.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8357865720DC311F00F93955 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8357865920DC311F00F93955 /* libStackTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStackTableView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8357866520DC315700F93955 /* StackTableViewBasicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTableViewBasicCell.swift; sourceTree = "<group>"; };
+		8357866620DC315700F93955 /* StackTableViewSelectableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTableViewSelectableCell.swift; sourceTree = "<group>"; };
+		8357866720DC315700F93955 /* StackTableViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTableViewSection.swift; sourceTree = "<group>"; };
+		8357866820DC315700F93955 /* StackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTableViewCell.swift; sourceTree = "<group>"; };
+		8357866920DC315700F93955 /* StackTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTableViewController.swift; sourceTree = "<group>"; };
+		8357866B20DC315700F93955 /* StackTableViewHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTableViewHeaderFooterView.swift; sourceTree = "<group>"; };
+		8357866C20DC315700F93955 /* StackTableViewSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTableViewSeparator.swift; sourceTree = "<group>"; };
+		8357866D20DC315700F93955 /* StackTableViewSpacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTableViewSpacer.swift; sourceTree = "<group>"; };
+		8357866F20DC315700F93955 /* UIStackView+RemoveArrangedSubviewsFromSuperview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+RemoveArrangedSubviewsFromSuperview.swift"; sourceTree = "<group>"; };
+		8357867020DC315700F93955 /* UIView+EdgeConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+EdgeConstraints.swift"; sourceTree = "<group>"; };
+		8357867120DC315700F93955 /* STVTouchthroughView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STVTouchthroughView.swift; sourceTree = "<group>"; };
+		8357867220DC315700F93955 /* UIColor+Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Palette.swift"; sourceTree = "<group>"; };
+		8357867320DC315700F93955 /* StackTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTableView.swift; sourceTree = "<group>"; };
+		8357867420DC319100F93955 /* UIColor+OnePixelImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+OnePixelImage.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8357865620DC311F00F93955 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8357865020DC311F00F93955 = {
+			isa = PBXGroup;
+			children = (
+				8357865B20DC311F00F93955 /* StackTableView */,
+				8357865A20DC311F00F93955 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8357865A20DC311F00F93955 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8357865920DC311F00F93955 /* libStackTableView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8357865B20DC311F00F93955 /* StackTableView */ = {
+			isa = PBXGroup;
+			children = (
+				8357866320DC315700F93955 /* Sources */,
+			);
+			path = StackTableView;
+			sourceTree = "<group>";
+		};
+		8357866320DC315700F93955 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8357867320DC315700F93955 /* StackTableView.swift */,
+				8357866920DC315700F93955 /* StackTableViewController.swift */,
+				8357866420DC315700F93955 /* Contents */,
+				8357866A20DC315700F93955 /* Decorations */,
+				8357866E20DC315700F93955 /* Extensions */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8357866420DC315700F93955 /* Contents */ = {
+			isa = PBXGroup;
+			children = (
+				8357866520DC315700F93955 /* StackTableViewBasicCell.swift */,
+				8357866620DC315700F93955 /* StackTableViewSelectableCell.swift */,
+				8357866720DC315700F93955 /* StackTableViewSection.swift */,
+				8357866820DC315700F93955 /* StackTableViewCell.swift */,
+			);
+			path = Contents;
+			sourceTree = "<group>";
+		};
+		8357866A20DC315700F93955 /* Decorations */ = {
+			isa = PBXGroup;
+			children = (
+				8357866B20DC315700F93955 /* StackTableViewHeaderFooterView.swift */,
+				8357866C20DC315700F93955 /* StackTableViewSeparator.swift */,
+				8357866D20DC315700F93955 /* StackTableViewSpacer.swift */,
+			);
+			path = Decorations;
+			sourceTree = "<group>";
+		};
+		8357866E20DC315700F93955 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8357866F20DC315700F93955 /* UIStackView+RemoveArrangedSubviewsFromSuperview.swift */,
+				8357867020DC315700F93955 /* UIView+EdgeConstraints.swift */,
+				8357867120DC315700F93955 /* STVTouchthroughView.swift */,
+				8357867220DC315700F93955 /* UIColor+Palette.swift */,
+				8357867420DC319100F93955 /* UIColor+OnePixelImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8357865820DC311F00F93955 /* StackTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8357866020DC311F00F93955 /* Build configuration list for PBXNativeTarget "StackTableView" */;
+			buildPhases = (
+				8357865520DC311F00F93955 /* Sources */,
+				8357865620DC311F00F93955 /* Frameworks */,
+				8357865720DC311F00F93955 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StackTableView;
+			productName = StackTableView;
+			productReference = 8357865920DC311F00F93955 /* libStackTableView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8357865120DC311F00F93955 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Nikita Kukushkin";
+				TargetAttributes = {
+					8357865820DC311F00F93955 = {
+						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
+					};
+				};
+			};
+			buildConfigurationList = 8357865420DC311F00F93955 /* Build configuration list for PBXProject "StackTableView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8357865020DC311F00F93955;
+			productRefGroup = 8357865A20DC311F00F93955 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8357865820DC311F00F93955 /* StackTableView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8357865520DC311F00F93955 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8357868420DC339C00F93955 /* UIView+EdgeConstraints.swift in Sources */,
+				8357867D20DC338F00F93955 /* StackTableViewSelectableCell.swift in Sources */,
+				8357867A20DC338800F93955 /* StackTableView.swift in Sources */,
+				8357868220DC339800F93955 /* StackTableViewSpacer.swift in Sources */,
+				8357867B20DC338B00F93955 /* StackTableViewController.swift in Sources */,
+				8357868020DC339400F93955 /* StackTableViewHeaderFooterView.swift in Sources */,
+				8357867520DC319100F93955 /* UIColor+OnePixelImage.swift in Sources */,
+				8357868620DC33A000F93955 /* UIColor+Palette.swift in Sources */,
+				8357867F20DC339300F93955 /* StackTableViewCell.swift in Sources */,
+				8357867E20DC339100F93955 /* StackTableViewSection.swift in Sources */,
+				8357868120DC339600F93955 /* StackTableViewSeparator.swift in Sources */,
+				8357867C20DC338D00F93955 /* StackTableViewBasicCell.swift in Sources */,
+				8357868320DC339A00F93955 /* UIStackView+RemoveArrangedSubviewsFromSuperview.swift in Sources */,
+				8357868520DC339E00F93955 /* STVTouchthroughView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8357865E20DC311F00F93955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8357865F20DC311F00F93955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8357866120DC311F00F93955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8357866220DC311F00F93955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8357865420DC311F00F93955 /* Build configuration list for PBXProject "StackTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8357865E20DC311F00F93955 /* Debug */,
+				8357865F20DC311F00F93955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8357866020DC311F00F93955 /* Build configuration list for PBXNativeTarget "StackTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8357866120DC311F00F93955 /* Debug */,
+				8357866220DC311F00F93955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8357865120DC311F00F93955 /* Project object */;
+}
