@@ -11,7 +11,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     ) -> Bool {
 
         window = UIWindow()
-        window?.rootViewController = MenuViewController()
+        window?.rootViewController = UINavigationController(
+            rootViewController: MenuViewController()
+        )
         window?.makeKeyAndVisible()
 
         return true
