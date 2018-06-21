@@ -6,7 +6,7 @@ open class StackTableViewController: UIViewController {
     }
 
     open override func loadView() {
-        let stackTableView = StackTableView(frame: UIScreen.main.bounds)
+        let stackTableView = StackTableView()
         stackTableView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         view = stackTableView
     }
