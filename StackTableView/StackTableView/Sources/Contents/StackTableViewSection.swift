@@ -1,6 +1,7 @@
 import UIKit
 
 open class StackTableViewSection: UIView {
+
     open var headerTitle: String? {
         didSet { updateHeaderView() }
     }
@@ -133,12 +134,14 @@ open class StackTableViewSection: UIView {
 // MARK: - Workaround
 
 extension StackTableViewSection {
+
     open override func layoutMarginsDidChange() {
         super.layoutMarginsDidChange()
         workaround_updateMainStackViewHorizontalLayoutMargins()
     }
 
     // TODO: Write an explanation.
+    // TODO: Try autolayout debugger https://twitter.com/steipete/status/972847811644547075
     private func workaround_updateMainStackViewHorizontalLayoutMargins() {
         mainStackView.layoutMargins.left = layoutMargins.left
         mainStackView.layoutMargins.right = layoutMargins.right
@@ -148,6 +151,7 @@ extension StackTableViewSection {
 // MARK: - UIStackView + Add Arranged Subviews
 
 private extension UIStackView {
+
     func addArrangedSubviews(_ views: [UIView]) {
         for view in views {
             addArrangedSubview(view)

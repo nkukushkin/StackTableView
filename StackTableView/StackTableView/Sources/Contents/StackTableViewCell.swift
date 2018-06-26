@@ -1,6 +1,7 @@
 import UIKit
 
 open class StackTableViewCell: UIView {
+    
     // This is needed so that the button on the selectable cell,
     // which is behind the content view, could be tapped.
     // TODO: Handle touches without exposing custom views

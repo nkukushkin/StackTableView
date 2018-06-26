@@ -1,6 +1,7 @@
 import UIKit
 
 open class StackTableViewSelectableCell: StackTableViewCell {
+    
     open private(set) var isSelected = false
 
     /// Doesn't call `selectionChanged()`.

@@ -1,6 +1,7 @@
 import UIKit
 
 open class StackTableView: UIScrollView {
+    
     /// Setting a new value causes the whole UI to be rebuilt.
     open var sections: [StackTableViewSection] = [] {
         didSet { updateUserInterface() }

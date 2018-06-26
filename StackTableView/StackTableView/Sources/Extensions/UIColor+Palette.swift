@@ -1,6 +1,7 @@
 import UIKit
 
 extension UIColor {
+    
     static var stvSeparatorColor: UIColor {
         return UIColor(white: 0, alpha: 0.22)
     }

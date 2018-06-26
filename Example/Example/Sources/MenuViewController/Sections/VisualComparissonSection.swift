@@ -6,6 +6,8 @@ class VisualComparissonSection: StackTableViewSection {
     var didSelectUITableViewExample: (() -> Void)?
     var didSelectStackTableViewExample: (() -> Void)?
 
+    // MARK: User Interface
+
     private let uiTableViewExampleCell: StackTableViewBasicCell = {
         let cell = StackTableViewBasicCell()
         cell.textLabel.text = "UITableView"
@@ -18,8 +20,6 @@ class VisualComparissonSection: StackTableViewSection {
         return cell
     }()
 
-    // MARK: Initialization
-
     private func setupUserInterface() {
         headerTitle = LocalizedStrings.sectionHeader
         cells = [
@@ -27,6 +27,8 @@ class VisualComparissonSection: StackTableViewSection {
             stackTableViewExampleCell
         ]
     }
+
+    // MARK: Actions
 
     private func setupActions() {
         uiTableViewExampleCell.selectionChanged = { [weak self] cell, _ in
@@ -40,10 +42,16 @@ class VisualComparissonSection: StackTableViewSection {
         }
     }
 
-    override init(frame: CGRect) {
-        super.init(frame: .zero)
+    // MARK: Initialization
+
+    private func setup() {
         setupUserInterface()
         setupActions()
+    }
+
+    override init(frame: CGRect) {
+        super.init(frame: .zero)
+        setup()
     }
 }
 

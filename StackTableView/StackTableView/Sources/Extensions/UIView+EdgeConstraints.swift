@@ -1,6 +1,7 @@
 import UIKit
 
 struct EdgeConstraints {
+
     let top: NSLayoutConstraint
     let left: NSLayoutConstraint
     let bottom: NSLayoutConstraint
@@ -44,6 +45,7 @@ struct EdgeConstraints {
 }
 
 extension UIView {
+    
     func constrain(edgesToView view: UIView) {
         translatesAutoresizingMaskIntoConstraints = false
         constraints(fromEdgesTo: view).activate()

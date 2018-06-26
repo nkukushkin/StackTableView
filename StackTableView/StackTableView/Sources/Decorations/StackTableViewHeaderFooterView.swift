@@ -1,6 +1,7 @@
 import UIKit
 
 public class StackTableViewHeaderFooterView: UIView {
+    
     public private(set) lazy var textLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0

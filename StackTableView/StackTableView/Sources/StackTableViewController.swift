@@ -1,6 +1,7 @@
 import UIKit
 
 open class StackTableViewController: UIViewController {
+    
     open var stackTableView: StackTableView {
         return view as! StackTableView
     }

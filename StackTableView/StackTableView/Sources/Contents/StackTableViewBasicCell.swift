@@ -1,6 +1,7 @@
 import UIKit
 
 open class StackTableViewBasicCell: StackTableViewSelectableCell {
+    
     public private(set) lazy var textLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
