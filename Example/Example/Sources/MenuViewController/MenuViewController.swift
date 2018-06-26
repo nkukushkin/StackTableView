@@ -34,7 +34,7 @@ private enum LocalizedStrings {
 
     static var screenTitle: String {
         return NSLocalizedString(
-            "StackTableView Example",
+            "Menu",
             comment: "Title of the main screen."
         )
     }

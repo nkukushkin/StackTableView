@@ -13,6 +13,7 @@
 		83778CDB20DAE4250002945E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83778CDA20DAE4250002945E /* Assets.xcassets */; };
 		83778CDE20DAE4250002945E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83778CDC20DAE4250002945E /* LaunchScreen.storyboard */; };
 		83C26D6D20E2C1CA003470F7 /* VisualComparissonSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C26D6C20E2C1CA003470F7 /* VisualComparissonSection.swift */; };
+		83C26D7120E2CD84003470F7 /* ExampleUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C26D7020E2CD84003470F7 /* ExampleUITableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		83778CDD20DAE4250002945E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83778CDF20DAE4250002945E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83C26D6C20E2C1CA003470F7 /* VisualComparissonSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualComparissonSection.swift; sourceTree = "<group>"; };
+		83C26D7020E2CD84003470F7 /* ExampleUITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 				8357867620DC335000F93955 /* CarrierBundleUtilities.tbd */,
 			);
 			name = Frameworks;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		83778CC720DAE4240002945E = {
@@ -53,7 +56,6 @@
 			children = (
 				83778CD220DAE4240002945E /* Example */,
 				83778CD120DAE4240002945E /* Products */,
-				831443A320DAEAFD0044356E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +82,8 @@
 			children = (
 				83778CD320DAE4240002945E /* AppDelegate.swift */,
 				83C26D6E20E2C254003470F7 /* MenuViewController */,
+				83C26D7020E2CD84003470F7 /* ExampleUITableViewController.swift */,
+				831443A320DAEAFD0044356E /* Frameworks */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -190,6 +194,7 @@
 			files = (
 				83778CD620DAE4240002945E /* MenuViewController.swift in Sources */,
 				83C26D6D20E2C1CA003470F7 /* VisualComparissonSection.swift in Sources */,
+				83C26D7120E2CD84003470F7 /* ExampleUITableViewController.swift in Sources */,
 				83778CD420DAE4240002945E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
