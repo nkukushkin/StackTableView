@@ -2,6 +2,7 @@ import UIKit
 
 open class StackTableView: UIScrollView {
 
+    /// Setting a new value causes the whole UI to be rebuilt.
     open var headerView: UIView? {
         didSet { updateUserInterface() }
     }
@@ -11,6 +12,7 @@ open class StackTableView: UIScrollView {
         didSet { updateUserInterface() }
     }
 
+    /// Setting a new value causes the whole UI to be rebuilt.
     open var footerView: UIView? {
         didSet { updateUserInterface() }
     }
