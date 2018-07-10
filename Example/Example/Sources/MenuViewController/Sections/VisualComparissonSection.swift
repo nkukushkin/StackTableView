@@ -61,11 +61,8 @@ private enum LocalizedStrings {
 
     static var sectionHeader: String {
         return NSLocalizedString(
-            "Visual Comparisson",
-            comment: """
-                Title of the table section, which contains buttons \
-                that lead to examples of different table view implementations.
-                """
+            "Compare layout",
+            comment: ""
         )
     }
 }
