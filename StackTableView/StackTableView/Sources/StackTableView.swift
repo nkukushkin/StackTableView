@@ -1,9 +1,17 @@
 import UIKit
 
 open class StackTableView: UIScrollView {
+
+    open var headerView: UIView? {
+        didSet { updateUserInterface() }
+    }
     
     /// Setting a new value causes the whole UI to be rebuilt.
     open var sections: [StackTableViewSection] = [] {
+        didSet { updateUserInterface() }
+    }
+
+    open var footerView: UIView? {
         didSet { updateUserInterface() }
     }
 
@@ -43,10 +51,24 @@ open class StackTableView: UIScrollView {
     private let stackView = UIStackView()
 
     private func updateUserInterface() {
+        // Remove everything…
         stackView.removeArrangedSubviewsFromSuperview()
-        stackView.addArrangedSubview(StackTableViewSpacer())
+
+        // Add header or spacer…
+        if let headerView = headerView {
+            stackView.addArrangedSubview(headerView)
+        } else {
+            stackView.addArrangedSubview(StackTableViewSpacer())
+        }
+
+        // Add sections…
         for section in sections {
             stackView.addArrangedSubview(section)
+        }
+
+        // Add footer.
+        if let footerView = footerView {
+            stackView.addArrangedSubview(footerView)
         }
     }
 

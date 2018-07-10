@@ -1,5 +1,21 @@
 import UIKit
 
+class TableHeaderFooterView: UIView {
+
+    override var intrinsicContentSize: CGSize {
+        return CGSize(width: 44, height: 44)
+    }
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        backgroundColor = .red
+    }
+
+    @available(*, unavailable)
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
 
 struct TableData {
 
@@ -13,19 +29,56 @@ struct TableData {
         var footerTitle: String?
     }
 
+    var header: UIView?
     var sectionsData: [SectionData]
+    var footer: UIView?
 
-    static var sample: TableData {
+    static func generateSample() -> TableData {
+        let header = TableHeaderFooterView()
+        let footer = TableHeaderFooterView()
+
         let cells = ["One", "Two", "Three"].map(CellData.init(title:))
         let section = SectionData(headerTitle: "Hello", cellsData: cells, footerTitle: "Goodbye")
-        return TableData(sectionsData: [section])
+        return TableData(header: header, sectionsData: [section], footer: footer)
     }
 }
 
 class ExampleUITableViewController: UITableViewController {
 
     var tableData: TableData {
-        didSet { tableView.reloadData() }
+        didSet { updateTableData() }
+    }
+
+    private func updateTableData() {
+        // Add header…
+        if let header = tableData.header {
+            let headerFrame = CGRect(
+                origin: .zero,
+                size: header.intrinsicContentSize
+            )
+            header.frame = headerFrame
+            tableView.tableHeaderView = header
+        } else {
+            tableView.tableHeaderView = nil
+        }
+
+        // Add footer…
+        if let footer = tableData.footer {
+            let footerFrame = CGRect(
+                origin: .zero,
+                size: footer.intrinsicContentSize
+            )
+            footer.frame = footerFrame
+            tableView.tableHeaderView = footer
+        } else {
+            tableView.tableHeaderView = nil
+        }
+
+        // Reload sections.
+        tableView.reloadData()
+        tableView.tableHeaderView = tableData.header
+        tableView.tableFooterView = tableData.footer
+
     }
 
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -50,8 +103,9 @@ class ExampleUITableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "TODO")
+
+        updateTableData()
     }
 
     // MARK: Initialization
@@ -77,6 +131,8 @@ class ExampleStackTableViewController: StackTableViewController {
     }
 
     private func updateTableContents() {
+        stackTableView.headerView = tableData.header
+        stackTableView.footerView = tableData.footer
         stackTableView.sections = tableData.sectionsData.map { sectionData in
             let section = StackTableViewSection()
             section.headerTitle = sectionData.headerTitle
@@ -88,7 +144,7 @@ class ExampleStackTableViewController: StackTableViewController {
             }
             return section
         }
-    }   
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
