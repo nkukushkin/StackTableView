@@ -37,9 +37,43 @@ struct TableData {
         let header = TableHeaderFooterView()
         let footer = TableHeaderFooterView()
 
-        let cells = ["One", "Two", "Three"].map(CellData.init(title:))
-        let section = SectionData(headerTitle: "Hello", cellsData: cells, footerTitle: "Goodbye")
-        return TableData(header: header, sectionsData: [section], footer: footer)
+        let cellTitles = ["Cell 1", "Cell 2"]
+
+        let section1Cells = cellTitles.map(CellData.init(title:))
+        let section1 = SectionData(
+            headerTitle: "Section1 Header",
+            cellsData: section1Cells,
+            footerTitle: "Section1 Footer"
+        )
+
+        let section2Cells = cellTitles.map(CellData.init(title:))
+        let section2 = SectionData(
+            headerTitle: "Section2 Header",
+            cellsData: section2Cells,
+            footerTitle: "Section2 Footer"
+        )
+
+        let section3Cells = cellTitles.map(CellData.init(title:))
+        let section3 = SectionData(
+            headerTitle: nil,
+            cellsData: section3Cells,
+            footerTitle: nil
+        )
+
+        let section4Cells = cellTitles.map(CellData.init(title:))
+        let section4 = SectionData(
+            headerTitle: nil,
+            cellsData: section4Cells,
+            footerTitle: nil
+        )
+
+        return TableData(
+            header: header,
+            sectionsData: [
+                section1, section2, section3, section4
+            ],
+            footer: footer
+        )
     }
 }
 
@@ -50,13 +84,14 @@ class ExampleUITableViewController: UITableViewController {
     }
 
     private func updateTableData() {
+        func translateIntrinsicSizeToFrame(for view: UIView) {
+            let frame = CGRect(origin: .zero, size: view.intrinsicContentSize)
+            view.frame = frame
+        }
+
         // Add header…
         if let header = tableData.header {
-            let headerFrame = CGRect(
-                origin: .zero,
-                size: header.intrinsicContentSize
-            )
-            header.frame = headerFrame
+            translateIntrinsicSizeToFrame(for: header)
             tableView.tableHeaderView = header
         } else {
             tableView.tableHeaderView = nil
@@ -64,20 +99,16 @@ class ExampleUITableViewController: UITableViewController {
 
         // Add footer…
         if let footer = tableData.footer {
-            let footerFrame = CGRect(
-                origin: .zero,
-                size: footer.intrinsicContentSize
-            )
-            footer.frame = footerFrame
+            translateIntrinsicSizeToFrame(for: footer)
             tableView.tableHeaderView = footer
         } else {
             tableView.tableHeaderView = nil
         }
 
         // Reload sections.
-        tableView.reloadData()
         tableView.tableHeaderView = tableData.header
         tableView.tableFooterView = tableData.footer
+        tableView.reloadData()
 
     }
 
@@ -87,6 +118,10 @@ class ExampleUITableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
         return tableData.sectionsData[section].footerTitle
+    }
+
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return tableData.sectionsData.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
