@@ -11,6 +11,8 @@
 		835F7E7B20F4F8E20055AD8F /* MenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F7E7A20F4F8E20055AD8F /* MenuCoordinator.swift */; };
 		835F7E7D20F4FCEA0055AD8F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F7E7C20F4FCEA0055AD8F /* Coordinator.swift */; };
 		835F7E8020F50A4D0055AD8F /* libStackTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 835F7E7F20F50A4D0055AD8F /* libStackTableView.a */; };
+		835F7E8220F513CF0055AD8F /* ExampleStackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F7E8120F513CF0055AD8F /* ExampleStackTableViewController.swift */; };
+		835F7E8420F514050055AD8F /* TableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F7E8320F514050055AD8F /* TableData.swift */; };
 		83778CD420DAE4240002945E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83778CD320DAE4240002945E /* AppDelegate.swift */; };
 		83778CD620DAE4240002945E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83778CD520DAE4240002945E /* MenuViewController.swift */; };
 		83778CDB20DAE4250002945E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83778CDA20DAE4250002945E /* Assets.xcassets */; };
@@ -24,6 +26,9 @@
 		835F7E7A20F4F8E20055AD8F /* MenuCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCoordinator.swift; sourceTree = "<group>"; };
 		835F7E7C20F4FCEA0055AD8F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		835F7E7F20F50A4D0055AD8F /* libStackTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libStackTableView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		835F7E8120F513CF0055AD8F /* ExampleStackTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleStackTableViewController.swift; sourceTree = "<group>"; };
+		835F7E8320F514050055AD8F /* TableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableData.swift; sourceTree = "<group>"; };
+		835F7E8620F514CB0055AD8F /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TODO.md; sourceTree = "<group>"; };
 		83778CD020DAE4240002945E /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83778CD320DAE4240002945E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83778CD520DAE4240002945E /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -64,9 +69,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		835F7E8520F514630055AD8F /* Layout Comparisson */ = {
+			isa = PBXGroup;
+			children = (
+				83C26D6C20E2C1CA003470F7 /* VisualComparissonSection.swift */,
+				835F7E8320F514050055AD8F /* TableData.swift */,
+				83C26D7020E2CD84003470F7 /* ExampleUITableViewController.swift */,
+				835F7E8120F513CF0055AD8F /* ExampleStackTableViewController.swift */,
+			);
+			path = "Layout Comparisson";
+			sourceTree = "<group>";
+		};
 		83778CC720DAE4240002945E = {
 			isa = PBXGroup;
 			children = (
+				835F7E8620F514CB0055AD8F /* TODO.md */,
 				83778CD220DAE4240002945E /* Example */,
 				83778CD120DAE4240002945E /* Products */,
 				835F7E7E20F50A4D0055AD8F /* Frameworks */,
@@ -122,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				83778CD520DAE4240002945E /* MenuViewController.swift */,
-				83C26D7020E2CD84003470F7 /* ExampleUITableViewController.swift */,
 				83C26D6F20E2C264003470F7 /* Sections */,
 			);
 			path = MenuViewController;
@@ -131,7 +147,7 @@
 		83C26D6F20E2C264003470F7 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
-				83C26D6C20E2C1CA003470F7 /* VisualComparissonSection.swift */,
+				835F7E8520F514630055AD8F /* Layout Comparisson */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -207,7 +223,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				83778CD620DAE4240002945E /* MenuViewController.swift in Sources */,
+				835F7E8220F513CF0055AD8F /* ExampleStackTableViewController.swift in Sources */,
 				835F7E7B20F4F8E20055AD8F /* MenuCoordinator.swift in Sources */,
+				835F7E8420F514050055AD8F /* TableData.swift in Sources */,
 				83C26D6D20E2C1CA003470F7 /* VisualComparissonSection.swift in Sources */,
 				835F7E7920F4F7B60055AD8F /* AppCoordinator.swift in Sources */,
 				83C26D7120E2CD84003470F7 /* ExampleUITableViewController.swift in Sources */,
