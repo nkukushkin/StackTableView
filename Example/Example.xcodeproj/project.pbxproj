@@ -51,33 +51,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		835F7E7720F4F76E0055AD8F /* Coordinators */ = {
-			isa = PBXGroup;
-			children = (
-				835F7E7C20F4FCEA0055AD8F /* Coordinator.swift */,
-				835F7E7820F4F7B60055AD8F /* AppCoordinator.swift */,
-				835F7E7A20F4F8E20055AD8F /* MenuCoordinator.swift */,
-			);
-			path = Coordinators;
-			sourceTree = "<group>";
-		};
 		835F7E7E20F50A4D0055AD8F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				835F7E7F20F50A4D0055AD8F /* libStackTableView.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		835F7E8520F514630055AD8F /* Layout Comparisson */ = {
-			isa = PBXGroup;
-			children = (
-				83C26D6C20E2C1CA003470F7 /* VisualComparissonSection.swift */,
-				835F7E8320F514050055AD8F /* TableData.swift */,
-				83C26D7020E2CD84003470F7 /* ExampleUITableViewController.swift */,
-				835F7E8120F513CF0055AD8F /* ExampleStackTableViewController.swift */,
-			);
-			path = "Layout Comparisson";
 			sourceTree = "<group>";
 		};
 		83778CC720DAE4240002945E = {
@@ -111,9 +90,10 @@
 		839AD62F20DC27C900C521E3 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				835F7E7C20F4FCEA0055AD8F /* Coordinator.swift */,
 				83778CD320DAE4240002945E /* AppDelegate.swift */,
-				835F7E7720F4F76E0055AD8F /* Coordinators */,
-				83C26D6E20E2C254003470F7 /* MenuViewController */,
+				835F7E7820F4F7B60055AD8F /* AppCoordinator.swift */,
+				83C26D6E20E2C254003470F7 /* Menu */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -135,21 +115,25 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		83C26D6E20E2C254003470F7 /* MenuViewController */ = {
+		83C26D6E20E2C254003470F7 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				835F7E7A20F4F8E20055AD8F /* MenuCoordinator.swift */,
 				83778CD520DAE4240002945E /* MenuViewController.swift */,
-				83C26D6F20E2C264003470F7 /* Sections */,
+				83C26D6F20E2C264003470F7 /* Comparissons */,
 			);
-			path = MenuViewController;
+			path = Menu;
 			sourceTree = "<group>";
 		};
-		83C26D6F20E2C264003470F7 /* Sections */ = {
+		83C26D6F20E2C264003470F7 /* Comparissons */ = {
 			isa = PBXGroup;
 			children = (
-				835F7E8520F514630055AD8F /* Layout Comparisson */,
+				835F7E8320F514050055AD8F /* TableData.swift */,
+				83C26D7020E2CD84003470F7 /* ExampleUITableViewController.swift */,
+				835F7E8120F513CF0055AD8F /* ExampleStackTableViewController.swift */,
+				83C26D6C20E2C1CA003470F7 /* VisualComparissonSection.swift */,
 			);
-			path = Sections;
+			path = Comparissons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

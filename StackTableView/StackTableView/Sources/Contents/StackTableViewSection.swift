@@ -147,14 +147,3 @@ extension StackTableViewSection {
         mainStackView.layoutMargins.right = layoutMargins.right
     }
 }
-
-// MARK: - UIStackView + Add Arranged Subviews
-
-private extension UIStackView {
-
-    func addArrangedSubviews(_ views: [UIView]) {
-        for view in views {
-            addArrangedSubview(view)
-        }
-    }
-}

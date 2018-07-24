@@ -5,13 +5,13 @@ class MenuViewController: StackTableViewController {
 
     // MARK: Visual Comparisson Section
 
-    var didSelectUITableViewExample: (() -> Void)?
-    var didSelectStackTableViewExample: (() -> Void)?
+    var didSelectUITableView: (() -> Void)?
+    var didSelectStackTableView: (() -> Void)?
 
-    private lazy var visualComparissonSection: VisualComparissonSection = {
-        let section = VisualComparissonSection()
-        section.didSelectUITableViewExample = self.didSelectUITableViewExample
-        section.didSelectStackTableViewExample = self.didSelectStackTableViewExample
+    private lazy var visualComparissonSection: ComparissonSection = {
+        let section = ComparissonSection()
+        section.didSelectUITableView = self.didSelectUITableView
+        section.didSelectStackTableView = self.didSelectStackTableView
         return section
     }()
 

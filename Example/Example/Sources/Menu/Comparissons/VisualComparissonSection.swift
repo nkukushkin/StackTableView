@@ -1,10 +1,10 @@
 import UIKit
 import StackTableView
 
-class VisualComparissonSection: StackTableViewSection {
+class ComparissonSection: StackTableViewSection {
 
-    var didSelectUITableViewExample: (() -> Void)?
-    var didSelectStackTableViewExample: (() -> Void)?
+    var didSelectUITableView: (() -> Void)?
+    var didSelectStackTableView: (() -> Void)?
 
     // MARK: User Interface
 
@@ -33,12 +33,12 @@ class VisualComparissonSection: StackTableViewSection {
     private func setupActions() {
         uiTableViewExampleCell.selectionChanged = { [weak self] cell, _ in
             cell.setSelected(false, animated: true)
-            self?.didSelectUITableViewExample?()
+            self?.didSelectUITableView?()
         }
 
         stackTableViewExampleCell.selectionChanged = { [weak self] cell, _ in
             cell.setSelected(false, animated: true)
-            self?.didSelectStackTableViewExample?()
+            self?.didSelectStackTableView?()
         }
     }
 

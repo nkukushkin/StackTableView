@@ -6,6 +6,8 @@ class ExampleUITableViewController: UITableViewController {
         didSet { updateTableData() }
     }
 
+    private let cellIdentitfier = "CellIdentifier"
+
     private func updateTableData() {
         func translateIntrinsicSizeToFrame(for view: UIView) {
             let frame = CGRect(origin: .zero, size: view.intrinsicContentSize)
@@ -35,33 +37,12 @@ class ExampleUITableViewController: UITableViewController {
 
     }
 
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return tableData.sectionsData[section].headerTitle
-    }
-
-    override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-        return tableData.sectionsData[section].footerTitle
-    }
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return tableData.sectionsData.count
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tableData.sectionsData[section].cellsData.count
-    }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TODO", for: indexPath)
-        cell.textLabel?.text = tableData.sectionsData[indexPath.section].cellsData[indexPath.row].title
-        return cell
-    }
-
     // MARK: Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "TODO")
+
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentitfier)
 
         updateTableData()
     }
@@ -76,5 +57,32 @@ class ExampleUITableViewController: UITableViewController {
     @available(*, unavailable)
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+}
+
+// MARK: - UITableViewDataSource
+
+extension ExampleUITableViewController {
+
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return tableData.sectionsData.count
+    }
+
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return tableData.sectionsData[section].headerTitle
+    }
+
+    override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        return tableData.sectionsData[section].footerTitle
+    }
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tableData.sectionsData[section].cellsData.count
+    }
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentitfier, for: indexPath)
+        cell.textLabel?.text = tableData.sectionsData[indexPath.section].cellsData[indexPath.row].title
+        return cell
     }
 }

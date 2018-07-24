@@ -4,7 +4,7 @@ open class StackTableViewCell: UIView {
     
     // This is needed so that the button on the selectable cell,
     // which is behind the content view, could be tapped.
-    // TODO: Handle touches without exposing custom views
+    // TODO: Handle touches without exposing custom view subclass.
     open let contentView = STVTouchthroughView()
 
     open let separator = StackTableViewSeparator()
@@ -15,7 +15,7 @@ open class StackTableViewCell: UIView {
         didSet { updateHiding() }
     }
 
-    /// These changes produce good-looking animations.
+    /// Hiding a cell by changing alpha results in good-looking animations.
     private func updateHiding() {
         separator.alpha = isHidden ? 0 : 1
     }

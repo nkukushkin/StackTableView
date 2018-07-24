@@ -17,7 +17,7 @@
 		8357868020DC339400F93955 /* StackTableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357866B20DC315700F93955 /* StackTableViewHeaderFooterView.swift */; };
 		8357868120DC339600F93955 /* StackTableViewSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357866C20DC315700F93955 /* StackTableViewSeparator.swift */; };
 		8357868220DC339800F93955 /* StackTableViewSpacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357866D20DC315700F93955 /* StackTableViewSpacer.swift */; };
-		8357868320DC339A00F93955 /* UIStackView+RemoveArrangedSubviewsFromSuperview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357866F20DC315700F93955 /* UIStackView+RemoveArrangedSubviewsFromSuperview.swift */; };
+		8357868320DC339A00F93955 /* UIStackView+MultipleViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357866F20DC315700F93955 /* UIStackView+MultipleViews.swift */; };
 		8357868420DC339C00F93955 /* UIView+EdgeConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357867020DC315700F93955 /* UIView+EdgeConstraints.swift */; };
 		8357868520DC339E00F93955 /* STVTouchthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357867120DC315700F93955 /* STVTouchthroughView.swift */; };
 		8357868620DC33A000F93955 /* UIColor+Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357867220DC315700F93955 /* UIColor+Palette.swift */; };
@@ -45,7 +45,7 @@
 		8357866B20DC315700F93955 /* StackTableViewHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTableViewHeaderFooterView.swift; sourceTree = "<group>"; };
 		8357866C20DC315700F93955 /* StackTableViewSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTableViewSeparator.swift; sourceTree = "<group>"; };
 		8357866D20DC315700F93955 /* StackTableViewSpacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTableViewSpacer.swift; sourceTree = "<group>"; };
-		8357866F20DC315700F93955 /* UIStackView+RemoveArrangedSubviewsFromSuperview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+RemoveArrangedSubviewsFromSuperview.swift"; sourceTree = "<group>"; };
+		8357866F20DC315700F93955 /* UIStackView+MultipleViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+MultipleViews.swift"; sourceTree = "<group>"; };
 		8357867020DC315700F93955 /* UIView+EdgeConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+EdgeConstraints.swift"; sourceTree = "<group>"; };
 		8357867120DC315700F93955 /* STVTouchthroughView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STVTouchthroughView.swift; sourceTree = "<group>"; };
 		8357867220DC315700F93955 /* UIColor+Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Palette.swift"; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 		8357866E20DC315700F93955 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				8357866F20DC315700F93955 /* UIStackView+RemoveArrangedSubviewsFromSuperview.swift */,
+				8357866F20DC315700F93955 /* UIStackView+MultipleViews.swift */,
 				8357867020DC315700F93955 /* UIView+EdgeConstraints.swift */,
 				8357867120DC315700F93955 /* STVTouchthroughView.swift */,
 				8357867220DC315700F93955 /* UIColor+Palette.swift */,
@@ -203,7 +203,7 @@
 				8357867E20DC339100F93955 /* StackTableViewSection.swift in Sources */,
 				8357868120DC339600F93955 /* StackTableViewSeparator.swift in Sources */,
 				8357867C20DC338D00F93955 /* StackTableViewBasicCell.swift in Sources */,
-				8357868320DC339A00F93955 /* UIStackView+RemoveArrangedSubviewsFromSuperview.swift in Sources */,
+				8357868320DC339A00F93955 /* UIStackView+MultipleViews.swift in Sources */,
 				8357868520DC339E00F93955 /* STVTouchthroughView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
