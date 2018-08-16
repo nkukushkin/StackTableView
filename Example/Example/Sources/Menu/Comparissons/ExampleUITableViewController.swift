@@ -2,39 +2,29 @@ import UIKit
 
 class ExampleUITableViewController: UITableViewController {
 
-    var tableData: TableData {
-        didSet { updateTableData() }
-    }
+    var tableData: TableData
 
     private let cellIdentitfier = "CellIdentifier"
 
-    private func updateTableData() {
-        func translateIntrinsicSizeToFrame(for view: UIView) {
-            let frame = CGRect(origin: .zero, size: view.intrinsicContentSize)
-            view.frame = frame
-        }
+    // MARK: Table Header and Footer
 
-        // Add header…
+    private func translateIntrinsicSizeToFrame(for view: UIView) {
+        let frame = CGRect(origin: .zero, size: view.intrinsicContentSize)
+        view.frame = frame
+    }
+
+    private func setupTableHeader() {
         if let header = tableData.header {
             translateIntrinsicSizeToFrame(for: header)
             tableView.tableHeaderView = header
-        } else {
-            tableView.tableHeaderView = nil
         }
+    }
 
-        // Add footer…
+    private func setupTableFooter() {
         if let footer = tableData.footer {
             translateIntrinsicSizeToFrame(for: footer)
-            tableView.tableHeaderView = footer
-        } else {
-            tableView.tableHeaderView = nil
+            tableView.tableFooterView = footer
         }
-
-        // Reload sections.
-        tableView.tableHeaderView = tableData.header
-        tableView.tableFooterView = tableData.footer
-        tableView.reloadData()
-
     }
 
     // MARK: Lifecycle
@@ -44,7 +34,8 @@ class ExampleUITableViewController: UITableViewController {
 
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentitfier)
 
-        updateTableData()
+        setupTableHeader()
+        setupTableFooter()
     }
 
     // MARK: Initialization
