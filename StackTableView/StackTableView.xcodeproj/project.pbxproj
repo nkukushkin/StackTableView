@@ -103,10 +103,8 @@
 		8357866420DC315700F93955 /* Contents */ = {
 			isa = PBXGroup;
 			children = (
-				8357866520DC315700F93955 /* StackTableViewBasicCell.swift */,
-				8357866620DC315700F93955 /* StackTableViewSelectableCell.swift */,
 				8357866720DC315700F93955 /* StackTableViewSection.swift */,
-				8357866820DC315700F93955 /* StackTableViewCell.swift */,
+				83A7E9562107B089009F5E8C /* Cells */,
 			);
 			path = Contents;
 			sourceTree = "<group>";
@@ -131,6 +129,16 @@
 				8357867420DC319100F93955 /* UIColor+OnePixelImage.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		83A7E9562107B089009F5E8C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8357866820DC315700F93955 /* StackTableViewCell.swift */,
+				8357866620DC315700F93955 /* StackTableViewSelectableCell.swift */,
+				8357866520DC315700F93955 /* StackTableViewBasicCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
