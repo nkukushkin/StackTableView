@@ -1,4 +1,3 @@
-import UIKit
 import StackTableView
 
 class HideCellExampleSection: StackTableViewSection {
