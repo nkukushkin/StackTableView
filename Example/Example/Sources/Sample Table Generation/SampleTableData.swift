@@ -1,23 +1,6 @@
 import UIKit
 
-class ExampleHeaderFooterView: UIView {
-
-    override var intrinsicContentSize: CGSize {
-        return CGSize(width: 44, height: 44)
-    }
-
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        backgroundColor = .red
-    }
-
-    @available(*, unavailable)
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-}
-
-struct TableData {
+struct SampleTableData {
 
     struct CellData {
         var title: String
@@ -32,10 +15,13 @@ struct TableData {
     var header: UIView?
     var sectionsData: [SectionData]
     var footer: UIView?
+}
 
-    static func generateSample() -> TableData {
-        let header = ExampleHeaderFooterView()
-        let footer = ExampleHeaderFooterView()
+extension SampleTableData {
+
+    static var basicSample: SampleTableData {
+        let header = SampleHeaderFooterView()
+        let footer = SampleHeaderFooterView()
 
         let cellTitles = ["Cell 1", "Cell 2"]
 
@@ -67,7 +53,7 @@ struct TableData {
             footerTitle: nil
         )
 
-        return TableData(
+        return SampleTableData(
             header: header,
             sectionsData: [
                 section1, section2, section3, section4

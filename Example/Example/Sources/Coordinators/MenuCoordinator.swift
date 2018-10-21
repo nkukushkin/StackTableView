@@ -10,13 +10,13 @@ class MenuCoordinator: Coordinator {
 
         menuVC.didSelectUITableView = { [weak self] in
             let sampleTableData = sampleDataGenerator()
-            let uiTableViewExampleVC = ExampleUITableViewController(tableData: sampleTableData)
+            let uiTableViewExampleVC = SampleUITableViewController(tableData: sampleTableData)
             self?.navigationController.pushViewController(uiTableViewExampleVC, animated: true)
         }
 
         menuVC.didSelectStackTableView = { [weak self] in
             let sampleTableData = sampleDataGenerator()
-            let stackTableViewExampleVC = ExampleStackTableViewController(tableData: sampleTableData)
+            let stackTableViewExampleVC = SampleStackTableViewController(tableData: sampleTableData)
             self?.navigationController.pushViewController(stackTableViewExampleVC, animated: true)
         }
 

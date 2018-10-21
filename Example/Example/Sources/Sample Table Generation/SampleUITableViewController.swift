@@ -1,6 +1,6 @@
 import UIKit
 
-class ExampleUITableViewController: UITableViewController {
+class SampleUITableViewController: UITableViewController {
 
     let tableData: TableData
 
@@ -48,7 +48,7 @@ class ExampleUITableViewController: UITableViewController {
 
 // MARK: - UITableViewDataSource
 
-extension ExampleUITableViewController {
+extension SampleUITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return tableData.sectionsData.count

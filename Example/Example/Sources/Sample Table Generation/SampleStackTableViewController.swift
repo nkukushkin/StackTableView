@@ -1,6 +1,6 @@
 import StackTableView
 
-class ExampleStackTableViewController: StackTableViewController {
+class SampleStackTableViewController: StackTableViewController {
 
     let tableData: TableData
 
