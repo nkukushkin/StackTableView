@@ -7,54 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8357867520DC319100F93955 /* UIColor+OnePixelImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357867420DC319100F93955 /* UIColor+OnePixelImage.swift */; };
-		8357867A20DC338800F93955 /* StackTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357867320DC315700F93955 /* StackTableView.swift */; };
-		8357867B20DC338B00F93955 /* StackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357866920DC315700F93955 /* StackTableViewController.swift */; };
-		8357867C20DC338D00F93955 /* StackTableViewBasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357866520DC315700F93955 /* StackTableViewBasicCell.swift */; };
-		8357867D20DC338F00F93955 /* StackTableViewSelectableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357866620DC315700F93955 /* StackTableViewSelectableCell.swift */; };
-		8357867E20DC339100F93955 /* StackTableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357866720DC315700F93955 /* StackTableViewSection.swift */; };
-		8357867F20DC339300F93955 /* StackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357866820DC315700F93955 /* StackTableViewCell.swift */; };
-		8357868020DC339400F93955 /* StackTableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357866B20DC315700F93955 /* StackTableViewHeaderFooterView.swift */; };
-		8357868120DC339600F93955 /* StackTableViewSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357866C20DC315700F93955 /* StackTableViewSeparator.swift */; };
-		8357868220DC339800F93955 /* StackTableViewSpacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357866D20DC315700F93955 /* StackTableViewSpacer.swift */; };
-		8357868320DC339A00F93955 /* UIStackView+MultipleViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357866F20DC315700F93955 /* UIStackView+MultipleViews.swift */; };
-		8357868420DC339C00F93955 /* UIView+EdgeConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357867020DC315700F93955 /* UIView+EdgeConstraints.swift */; };
-		8357868520DC339E00F93955 /* STVTouchthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357867120DC315700F93955 /* STVTouchthroughView.swift */; };
-		8357868620DC33A000F93955 /* UIColor+Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8357867220DC315700F93955 /* UIColor+Palette.swift */; };
+		8322AA00217D09DF0012DA8B /* StackTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8322A9FE217D09DF0012DA8B /* StackTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8322AA19217D0A050012DA8B /* StackTableViewBasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8322AA09217D0A050012DA8B /* StackTableViewBasicCell.swift */; };
+		8322AA1A217D0A050012DA8B /* StackTableViewSelectableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8322AA0A217D0A050012DA8B /* StackTableViewSelectableCell.swift */; };
+		8322AA1B217D0A050012DA8B /* StackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8322AA0B217D0A050012DA8B /* StackTableViewCell.swift */; };
+		8322AA1C217D0A050012DA8B /* StackTableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8322AA0C217D0A050012DA8B /* StackTableViewSection.swift */; };
+		8322AA1D217D0A050012DA8B /* StackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8322AA0D217D0A050012DA8B /* StackTableViewController.swift */; };
+		8322AA1E217D0A050012DA8B /* StackTableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8322AA0F217D0A050012DA8B /* StackTableViewHeaderFooterView.swift */; };
+		8322AA1F217D0A050012DA8B /* StackTableViewSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8322AA10217D0A050012DA8B /* StackTableViewSeparator.swift */; };
+		8322AA20217D0A050012DA8B /* StackTableViewSpacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8322AA11217D0A050012DA8B /* StackTableViewSpacer.swift */; };
+		8322AA21217D0A050012DA8B /* UIStackView+MultipleViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8322AA13217D0A050012DA8B /* UIStackView+MultipleViews.swift */; };
+		8322AA22217D0A050012DA8B /* UIView+EdgeConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8322AA14217D0A050012DA8B /* UIView+EdgeConstraints.swift */; };
+		8322AA23217D0A050012DA8B /* STVTouchthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8322AA15217D0A050012DA8B /* STVTouchthroughView.swift */; };
+		8322AA24217D0A050012DA8B /* UIColor+OnePixelImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8322AA16217D0A050012DA8B /* UIColor+OnePixelImage.swift */; };
+		8322AA25217D0A050012DA8B /* UIColor+Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8322AA17217D0A050012DA8B /* UIColor+Palette.swift */; };
+		8322AA26217D0A050012DA8B /* StackTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8322AA18217D0A050012DA8B /* StackTableView.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		8357865720DC311F00F93955 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		8357865920DC311F00F93955 /* libStackTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStackTableView.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		8357866520DC315700F93955 /* StackTableViewBasicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTableViewBasicCell.swift; sourceTree = "<group>"; };
-		8357866620DC315700F93955 /* StackTableViewSelectableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTableViewSelectableCell.swift; sourceTree = "<group>"; };
-		8357866720DC315700F93955 /* StackTableViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTableViewSection.swift; sourceTree = "<group>"; };
-		8357866820DC315700F93955 /* StackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTableViewCell.swift; sourceTree = "<group>"; };
-		8357866920DC315700F93955 /* StackTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTableViewController.swift; sourceTree = "<group>"; };
-		8357866B20DC315700F93955 /* StackTableViewHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTableViewHeaderFooterView.swift; sourceTree = "<group>"; };
-		8357866C20DC315700F93955 /* StackTableViewSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTableViewSeparator.swift; sourceTree = "<group>"; };
-		8357866D20DC315700F93955 /* StackTableViewSpacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTableViewSpacer.swift; sourceTree = "<group>"; };
-		8357866F20DC315700F93955 /* UIStackView+MultipleViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+MultipleViews.swift"; sourceTree = "<group>"; };
-		8357867020DC315700F93955 /* UIView+EdgeConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+EdgeConstraints.swift"; sourceTree = "<group>"; };
-		8357867120DC315700F93955 /* STVTouchthroughView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STVTouchthroughView.swift; sourceTree = "<group>"; };
-		8357867220DC315700F93955 /* UIColor+Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Palette.swift"; sourceTree = "<group>"; };
-		8357867320DC315700F93955 /* StackTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTableView.swift; sourceTree = "<group>"; };
-		8357867420DC319100F93955 /* UIColor+OnePixelImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+OnePixelImage.swift"; sourceTree = "<group>"; };
+		8322A9FB217D09DF0012DA8B /* StackTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StackTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8322A9FE217D09DF0012DA8B /* StackTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackTableView.h; sourceTree = "<group>"; };
+		8322A9FF217D09DF0012DA8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8322AA09217D0A050012DA8B /* StackTableViewBasicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackTableViewBasicCell.swift; sourceTree = "<group>"; };
+		8322AA0A217D0A050012DA8B /* StackTableViewSelectableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackTableViewSelectableCell.swift; sourceTree = "<group>"; };
+		8322AA0B217D0A050012DA8B /* StackTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackTableViewCell.swift; sourceTree = "<group>"; };
+		8322AA0C217D0A050012DA8B /* StackTableViewSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackTableViewSection.swift; sourceTree = "<group>"; };
+		8322AA0D217D0A050012DA8B /* StackTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackTableViewController.swift; sourceTree = "<group>"; };
+		8322AA0F217D0A050012DA8B /* StackTableViewHeaderFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackTableViewHeaderFooterView.swift; sourceTree = "<group>"; };
+		8322AA10217D0A050012DA8B /* StackTableViewSeparator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackTableViewSeparator.swift; sourceTree = "<group>"; };
+		8322AA11217D0A050012DA8B /* StackTableViewSpacer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackTableViewSpacer.swift; sourceTree = "<group>"; };
+		8322AA13217D0A050012DA8B /* UIStackView+MultipleViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+MultipleViews.swift"; sourceTree = "<group>"; };
+		8322AA14217D0A050012DA8B /* UIView+EdgeConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+EdgeConstraints.swift"; sourceTree = "<group>"; };
+		8322AA15217D0A050012DA8B /* STVTouchthroughView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STVTouchthroughView.swift; sourceTree = "<group>"; };
+		8322AA16217D0A050012DA8B /* UIColor+OnePixelImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+OnePixelImage.swift"; sourceTree = "<group>"; };
+		8322AA17217D0A050012DA8B /* UIColor+Palette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Palette.swift"; sourceTree = "<group>"; };
+		8322AA18217D0A050012DA8B /* StackTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8357865620DC311F00F93955 /* Frameworks */ = {
+		8322A9F8217D09DF0012DA8B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -64,93 +55,115 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8357865020DC311F00F93955 = {
+		8322A9F1217D09DF0012DA8B = {
 			isa = PBXGroup;
 			children = (
-				8357865B20DC311F00F93955 /* StackTableView */,
-				8357865A20DC311F00F93955 /* Products */,
+				8322A9FD217D09DF0012DA8B /* StackTableView */,
+				8322A9FC217D09DF0012DA8B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8357865A20DC311F00F93955 /* Products */ = {
+		8322A9FC217D09DF0012DA8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8357865920DC311F00F93955 /* libStackTableView.a */,
+				8322A9FB217D09DF0012DA8B /* StackTableView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8357865B20DC311F00F93955 /* StackTableView */ = {
+		8322A9FD217D09DF0012DA8B /* StackTableView */ = {
 			isa = PBXGroup;
 			children = (
-				8357866320DC315700F93955 /* Sources */,
+				8322A9FE217D09DF0012DA8B /* StackTableView.h */,
+				8322AA06217D0A050012DA8B /* Sources */,
+				8322AA27217D0A1C0012DA8B /* Supporting Files */,
 			);
 			path = StackTableView;
 			sourceTree = "<group>";
 		};
-		8357866320DC315700F93955 /* Sources */ = {
+		8322AA06217D0A050012DA8B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				8357867320DC315700F93955 /* StackTableView.swift */,
-				8357866920DC315700F93955 /* StackTableViewController.swift */,
-				8357866420DC315700F93955 /* Contents */,
-				8357866A20DC315700F93955 /* Decorations */,
-				8357866E20DC315700F93955 /* Extensions */,
+				8322AA18217D0A050012DA8B /* StackTableView.swift */,
+				8322AA0D217D0A050012DA8B /* StackTableViewController.swift */,
+				8322AA07217D0A050012DA8B /* Contents */,
+				8322AA0E217D0A050012DA8B /* Decorations */,
+				8322AA12217D0A050012DA8B /* Extensions */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		8357866420DC315700F93955 /* Contents */ = {
+		8322AA07217D0A050012DA8B /* Contents */ = {
 			isa = PBXGroup;
 			children = (
-				8357866720DC315700F93955 /* StackTableViewSection.swift */,
-				83A7E9562107B089009F5E8C /* Cells */,
+				8322AA08217D0A050012DA8B /* Cells */,
+				8322AA0C217D0A050012DA8B /* StackTableViewSection.swift */,
 			);
 			path = Contents;
 			sourceTree = "<group>";
 		};
-		8357866A20DC315700F93955 /* Decorations */ = {
+		8322AA08217D0A050012DA8B /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				8357866B20DC315700F93955 /* StackTableViewHeaderFooterView.swift */,
-				8357866C20DC315700F93955 /* StackTableViewSeparator.swift */,
-				8357866D20DC315700F93955 /* StackTableViewSpacer.swift */,
-			);
-			path = Decorations;
-			sourceTree = "<group>";
-		};
-		8357866E20DC315700F93955 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				8357866F20DC315700F93955 /* UIStackView+MultipleViews.swift */,
-				8357867020DC315700F93955 /* UIView+EdgeConstraints.swift */,
-				8357867120DC315700F93955 /* STVTouchthroughView.swift */,
-				8357867220DC315700F93955 /* UIColor+Palette.swift */,
-				8357867420DC319100F93955 /* UIColor+OnePixelImage.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		83A7E9562107B089009F5E8C /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				8357866820DC315700F93955 /* StackTableViewCell.swift */,
-				8357866620DC315700F93955 /* StackTableViewSelectableCell.swift */,
-				8357866520DC315700F93955 /* StackTableViewBasicCell.swift */,
+				8322AA09217D0A050012DA8B /* StackTableViewBasicCell.swift */,
+				8322AA0A217D0A050012DA8B /* StackTableViewSelectableCell.swift */,
+				8322AA0B217D0A050012DA8B /* StackTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		8322AA0E217D0A050012DA8B /* Decorations */ = {
+			isa = PBXGroup;
+			children = (
+				8322AA0F217D0A050012DA8B /* StackTableViewHeaderFooterView.swift */,
+				8322AA10217D0A050012DA8B /* StackTableViewSeparator.swift */,
+				8322AA11217D0A050012DA8B /* StackTableViewSpacer.swift */,
+			);
+			path = Decorations;
+			sourceTree = "<group>";
+		};
+		8322AA12217D0A050012DA8B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8322AA13217D0A050012DA8B /* UIStackView+MultipleViews.swift */,
+				8322AA14217D0A050012DA8B /* UIView+EdgeConstraints.swift */,
+				8322AA15217D0A050012DA8B /* STVTouchthroughView.swift */,
+				8322AA16217D0A050012DA8B /* UIColor+OnePixelImage.swift */,
+				8322AA17217D0A050012DA8B /* UIColor+Palette.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8322AA27217D0A1C0012DA8B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8322A9FF217D09DF0012DA8B /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		8322A9F6217D09DF0012DA8B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8322AA00217D09DF0012DA8B /* StackTableView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		8357865820DC311F00F93955 /* StackTableView */ = {
+		8322A9FA217D09DF0012DA8B /* StackTableView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8357866020DC311F00F93955 /* Build configuration list for PBXNativeTarget "StackTableView" */;
+			buildConfigurationList = 8322AA03217D09DF0012DA8B /* Build configuration list for PBXNativeTarget "StackTableView" */;
 			buildPhases = (
-				8357865520DC311F00F93955 /* Sources */,
-				8357865620DC311F00F93955 /* Frameworks */,
-				8357865720DC311F00F93955 /* CopyFiles */,
+				8322A9F6217D09DF0012DA8B /* Headers */,
+				8322A9F7217D09DF0012DA8B /* Sources */,
+				8322A9F8217D09DF0012DA8B /* Frameworks */,
+				8322A9F9217D09DF0012DA8B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -158,68 +171,76 @@
 			);
 			name = StackTableView;
 			productName = StackTableView;
-			productReference = 8357865920DC311F00F93955 /* libStackTableView.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = 8322A9FB217D09DF0012DA8B /* StackTableView.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8357865120DC311F00F93955 /* Project object */ = {
+		8322A9F2217D09DF0012DA8B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Nikita Kukushkin";
 				TargetAttributes = {
-					8357865820DC311F00F93955 = {
-						CreatedOnToolsVersion = 9.4;
-						LastSwiftMigration = 0940;
+					8322A9FA217D09DF0012DA8B = {
+						CreatedOnToolsVersion = 10.0;
 					};
 				};
 			};
-			buildConfigurationList = 8357865420DC311F00F93955 /* Build configuration list for PBXProject "StackTableView" */;
+			buildConfigurationList = 8322A9F5217D09DF0012DA8B /* Build configuration list for PBXProject "StackTableView" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 8357865020DC311F00F93955;
-			productRefGroup = 8357865A20DC311F00F93955 /* Products */;
+			mainGroup = 8322A9F1217D09DF0012DA8B;
+			productRefGroup = 8322A9FC217D09DF0012DA8B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8357865820DC311F00F93955 /* StackTableView */,
+				8322A9FA217D09DF0012DA8B /* StackTableView */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		8322A9F9217D09DF0012DA8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		8357865520DC311F00F93955 /* Sources */ = {
+		8322A9F7217D09DF0012DA8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8357868420DC339C00F93955 /* UIView+EdgeConstraints.swift in Sources */,
-				8357867D20DC338F00F93955 /* StackTableViewSelectableCell.swift in Sources */,
-				8357867A20DC338800F93955 /* StackTableView.swift in Sources */,
-				8357868220DC339800F93955 /* StackTableViewSpacer.swift in Sources */,
-				8357867B20DC338B00F93955 /* StackTableViewController.swift in Sources */,
-				8357868020DC339400F93955 /* StackTableViewHeaderFooterView.swift in Sources */,
-				8357867520DC319100F93955 /* UIColor+OnePixelImage.swift in Sources */,
-				8357868620DC33A000F93955 /* UIColor+Palette.swift in Sources */,
-				8357867F20DC339300F93955 /* StackTableViewCell.swift in Sources */,
-				8357867E20DC339100F93955 /* StackTableViewSection.swift in Sources */,
-				8357868120DC339600F93955 /* StackTableViewSeparator.swift in Sources */,
-				8357867C20DC338D00F93955 /* StackTableViewBasicCell.swift in Sources */,
-				8357868320DC339A00F93955 /* UIStackView+MultipleViews.swift in Sources */,
-				8357868520DC339E00F93955 /* STVTouchthroughView.swift in Sources */,
+				8322AA1C217D0A050012DA8B /* StackTableViewSection.swift in Sources */,
+				8322AA25217D0A050012DA8B /* UIColor+Palette.swift in Sources */,
+				8322AA23217D0A050012DA8B /* STVTouchthroughView.swift in Sources */,
+				8322AA1E217D0A050012DA8B /* StackTableViewHeaderFooterView.swift in Sources */,
+				8322AA1D217D0A050012DA8B /* StackTableViewController.swift in Sources */,
+				8322AA1A217D0A050012DA8B /* StackTableViewSelectableCell.swift in Sources */,
+				8322AA24217D0A050012DA8B /* UIColor+OnePixelImage.swift in Sources */,
+				8322AA21217D0A050012DA8B /* UIStackView+MultipleViews.swift in Sources */,
+				8322AA20217D0A050012DA8B /* StackTableViewSpacer.swift in Sources */,
+				8322AA19217D0A050012DA8B /* StackTableViewBasicCell.swift in Sources */,
+				8322AA26217D0A050012DA8B /* StackTableView.swift in Sources */,
+				8322AA1F217D0A050012DA8B /* StackTableViewSeparator.swift in Sources */,
+				8322AA22217D0A050012DA8B /* UIView+EdgeConstraints.swift in Sources */,
+				8322AA1B217D0A050012DA8B /* StackTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		8357865E20DC311F00F93955 /* Debug */ = {
+		8322AA01217D09DF0012DA8B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -253,6 +274,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -270,16 +292,19 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		8357865F20DC311F00F93955 /* Release */ = {
+		8322AA02217D09DF0012DA8B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -313,6 +338,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -324,48 +350,62 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		8357866120DC311F00F93955 /* Debug */ = {
+		8322AA04217D09DF0012DA8B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/StackTableView/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nkukushkin.dev.StackTableView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		8357866220DC311F00F93955 /* Release */ = {
+		8322AA05217D09DF0012DA8B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/StackTableView/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nkukushkin.dev.StackTableView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -373,25 +413,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8357865420DC311F00F93955 /* Build configuration list for PBXProject "StackTableView" */ = {
+		8322A9F5217D09DF0012DA8B /* Build configuration list for PBXProject "StackTableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8357865E20DC311F00F93955 /* Debug */,
-				8357865F20DC311F00F93955 /* Release */,
+				8322AA01217D09DF0012DA8B /* Debug */,
+				8322AA02217D09DF0012DA8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8357866020DC311F00F93955 /* Build configuration list for PBXNativeTarget "StackTableView" */ = {
+		8322AA03217D09DF0012DA8B /* Build configuration list for PBXNativeTarget "StackTableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8357866120DC311F00F93955 /* Debug */,
-				8357866220DC311F00F93955 /* Release */,
+				8322AA04217D09DF0012DA8B /* Debug */,
+				8322AA05217D09DF0012DA8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8357865120DC311F00F93955 /* Project object */;
+	rootObject = 8322A9F2217D09DF0012DA8B /* Project object */;
 }

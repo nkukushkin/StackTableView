@@ -50,7 +50,7 @@ open class StackTableViewSelectableCell: StackTableViewCell {
 
     private func setupUserInterface() {
         addSubview(button)
-        sendSubview(toBack: button) // should be behind contentView
+        sendSubviewToBack(button) // should be behind contentView
         button.isSelected = isSelected
         button.constrain(edgesToView: self)
     }

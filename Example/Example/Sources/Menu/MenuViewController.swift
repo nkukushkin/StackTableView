@@ -1,6 +1,18 @@
 import UIKit
 import StackTableView
 
+enum MenuItem {
+    case uiTableView
+    case stackTableVIew
+}
+
+protocol MenuViewControllerDelegate {
+    func menuViewController(_: MenuViewController, didSelectMenuItem: MenuItem)
+
+    func menuViewControllerDidSelectUITableView(_: MenuViewController)
+    func menuViewControllerDidSelectStackTableVIew(_: MenuViewController)
+}
+
 class MenuViewController: StackTableViewController {
 
     // MARK: Visual Comparisson Section
@@ -10,10 +22,18 @@ class MenuViewController: StackTableViewController {
 
     private lazy var visualComparissonSection: ComparissonSection = {
         let section = ComparissonSection()
-        section.didSelectUITableView = self.didSelectUITableView
-        section.didSelectStackTableView = self.didSelectStackTableView
+        section.didSelectUITableView = { [weak self] in
+            self?.didSelectUITableView?()
+        }
+        section.didSelectStackTableView = { [weak self] in
+            self?.didSelectStackTableView?()
+        }
         return section
     }()
+
+    // Hiding animation
+
+    // Keyboard avoidance
 
     // MARK: Lifecycle
 

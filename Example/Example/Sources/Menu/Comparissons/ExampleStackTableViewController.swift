@@ -3,17 +3,17 @@ import StackTableView
 
 class ExampleStackTableViewController: StackTableViewController {
 
-    var tableData: TableData {
-        didSet { updateTableContents() }
-    }
+    let tableData: TableData
 
     private func updateTableContents() {
         stackTableView.headerView = tableData.header
         stackTableView.footerView = tableData.footer
+
         stackTableView.sections = tableData.sectionsData.map { sectionData in
             let section = StackTableViewSection()
             section.headerTitle = sectionData.headerTitle
             section.footerTitle = sectionData.footerTitle
+
             section.cells = sectionData.cellsData.map { cellData in
                 let cell = StackTableViewBasicCell()
                 cell.textLabel.text = cellData.title

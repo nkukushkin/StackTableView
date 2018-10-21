@@ -30,7 +30,7 @@ open class StackTableViewController: UIViewController {
     private func keyboardWillShow(notification: Notification) {
         guard
             let userInfo = notification.userInfo,
-            let keyboardFrame = userInfo[UIKeyboardFrameEndUserInfoKey] as? CGRect
+            let keyboardFrame = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect
         else { return }
 
         let convertedkeyboardFrame = stackTableView.convert(keyboardFrame, from: nil)
@@ -50,13 +50,13 @@ open class StackTableViewController: UIViewController {
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(keyboardWillShow(notification:)),
-            name: Notification.Name.UIKeyboardWillShow,
+            name: UIResponder.keyboardWillShowNotification,
             object: nil
         )
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(keyboardWillHide(sender:)),
-            name: Notification.Name.UIKeyboardWillHide,
+            name: UIResponder.keyboardWillHideNotification,
             object: nil
         )
     }
@@ -64,12 +64,12 @@ open class StackTableViewController: UIViewController {
     private func unregisterFromKeyboardNotifications() {
         NotificationCenter.default.removeObserver(
             self,
-            name: Notification.Name.UIKeyboardWillShow,
+            name: UIResponder.keyboardWillShowNotification,
             object: nil
         )
         NotificationCenter.default.removeObserver(
             self,
-            name: Notification.Name.UIKeyboardWillHide,
+            name: UIResponder.keyboardWillHideNotification,
             object: nil
         )
     }

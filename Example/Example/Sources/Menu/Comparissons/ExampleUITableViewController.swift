@@ -2,27 +2,22 @@ import UIKit
 
 class ExampleUITableViewController: UITableViewController {
 
-    var tableData: TableData
+    let tableData: TableData
 
     private let cellIdentitfier = "CellIdentifier"
 
     // MARK: Table Header and Footer
 
-    private func translateIntrinsicSizeToFrame(for view: UIView) {
-        let frame = CGRect(origin: .zero, size: view.intrinsicContentSize)
-        view.frame = frame
-    }
-
     private func setupTableHeader() {
         if let header = tableData.header {
-            translateIntrinsicSizeToFrame(for: header)
+            header.translateIntrinsicSizeIntoFrame()
             tableView.tableHeaderView = header
         }
     }
 
     private func setupTableFooter() {
         if let footer = tableData.footer {
-            translateIntrinsicSizeToFrame(for: footer)
+            footer.translateIntrinsicSizeIntoFrame()
             tableView.tableFooterView = footer
         }
     }
@@ -59,7 +54,8 @@ extension ExampleUITableViewController {
         return tableData.sectionsData.count
     }
 
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int
+    ) -> String? {
         return tableData.sectionsData[section].headerTitle
     }
 
@@ -73,7 +69,19 @@ extension ExampleUITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentitfier, for: indexPath)
-        cell.textLabel?.text = tableData.sectionsData[indexPath.section].cellsData[indexPath.row].title
+        cell.textLabel?.text = tableData
+            .sectionsData[indexPath.section]
+            .cellsData[indexPath.row]
+            .title
         return cell
+    }
+}
+
+// MARK: - Helpers
+
+private extension UIView {
+
+    func translateIntrinsicSizeIntoFrame() {
+        frame = CGRect(origin: frame.origin, size: intrinsicContentSize)
     }
 }

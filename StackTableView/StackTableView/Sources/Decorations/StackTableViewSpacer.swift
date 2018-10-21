@@ -3,6 +3,6 @@ import UIKit
 class StackTableViewSpacer: UIView {
     
     override var intrinsicContentSize: CGSize {
-        return CGSize(width: UIViewNoIntrinsicMetric, height: 18)
+        return CGSize(width: UIView.noIntrinsicMetric, height: 18)
     }
 }

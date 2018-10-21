@@ -3,7 +3,7 @@ import UIKit
 public class StackTableViewSeparator: UIView {
     
     public override var intrinsicContentSize: CGSize {
-        return CGSize(width: UIViewNoIntrinsicMetric, height: 1 / UIScreen.main.scale)
+        return CGSize(width: UIView.noIntrinsicMetric, height: 1 / UIScreen.main.scale)
     }
 
     override init(frame: CGRect) {
