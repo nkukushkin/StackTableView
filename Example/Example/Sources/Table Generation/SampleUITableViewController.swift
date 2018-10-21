@@ -9,16 +9,16 @@ class SampleUITableViewController: UITableViewController {
     // MARK: Table Header and Footer
 
     private func setupTableHeader() {
-        if let header = tableData.header {
-            header.translateIntrinsicSizeIntoFrame()
-            tableView.tableHeaderView = header
+        if let tableHeaderView = tableData.headerView {
+            tableHeaderView.translateIntrinsicSizeIntoFrame()
+            tableView.tableHeaderView = tableHeaderView
         }
     }
 
     private func setupTableFooter() {
-        if let footer = tableData.footer {
-            footer.translateIntrinsicSizeIntoFrame()
-            tableView.tableFooterView = footer
+        if let tableFooterView = tableData.footerView {
+            tableFooterView.translateIntrinsicSizeIntoFrame()
+            tableView.tableFooterView = tableFooterView
         }
     }
 
@@ -51,27 +51,27 @@ class SampleUITableViewController: UITableViewController {
 extension SampleUITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return tableData.sectionsData.count
+        return tableData.sections.count
     }
 
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int
     ) -> String? {
-        return tableData.sectionsData[section].headerTitle
+        return tableData.sections[section].headerTitle
     }
 
     override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-        return tableData.sectionsData[section].footerTitle
+        return tableData.sections[section].footerTitle
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tableData.sectionsData[section].cellsData.count
+        return tableData.sections[section].cells.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentitfier, for: indexPath)
         cell.textLabel?.text = tableData
-            .sectionsData[indexPath.section]
-            .cellsData[indexPath.row]
+            .sections[indexPath.section]
+            .cells[indexPath.row]
             .title
         return cell
     }

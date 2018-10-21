@@ -6,7 +6,7 @@ class MenuCoordinator: Coordinator {
 
     private var menuViewController: MenuViewController {
         let menuVC = MenuViewController()
-        let sampleDataGenerator = TableData.generateSample
+        let sampleDataGenerator = TableData.generateVisualComparissonSample
 
         menuVC.didSelectUITableView = { [weak self] in
             let sampleTableData = sampleDataGenerator()

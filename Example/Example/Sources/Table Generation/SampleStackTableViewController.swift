@@ -4,16 +4,16 @@ class SampleStackTableViewController: StackTableViewController {
 
     let tableData: TableData
 
-    private func updateTableContents() {
-        stackTableView.headerView = tableData.header
-        stackTableView.footerView = tableData.footer
+    private func setupTable() {
+        stackTableView.headerView = tableData.headerView
+        stackTableView.footerView = tableData.footerView
 
-        stackTableView.sections = tableData.sectionsData.map { sectionData in
+        stackTableView.sections = tableData.sections.map { sectionData in
             let section = StackTableViewSection()
             section.headerTitle = sectionData.headerTitle
             section.footerTitle = sectionData.footerTitle
 
-            section.cells = sectionData.cellsData.map { cellData in
+            section.cells = sectionData.cells.map { cellData in
                 let cell = StackTableViewBasicCell()
                 cell.textLabel.text = cellData.title
                 return cell
@@ -24,7 +24,7 @@ class SampleStackTableViewController: StackTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateTableContents()
+        setupTable()
     }
 
     // MARK: Initialization
