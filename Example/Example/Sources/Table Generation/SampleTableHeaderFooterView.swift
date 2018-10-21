@@ -1,7 +1,7 @@
 import UIKit
 
 class SampleHeaderFooterView: UIView {
-
+    
     override var intrinsicContentSize: CGSize {
         return CGSize(width: 44, height: 44)
     }
