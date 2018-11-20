@@ -17,37 +17,6 @@ open class StackTableView: UIScrollView {
         didSet { updateUserInterface() }
     }
 
-    // MARK: Animations
-
-    /// Use this method to animate table changes consistently.
-    public static func animate(
-        _ animations: @escaping () -> Void,
-        completion: ((_ finished: Bool) -> Void)? = nil
-    ) {
-        UIView.animate(
-            withDuration: 0.5,
-            delay: 0,
-            usingSpringWithDamping: 1,
-            initialSpringVelocity: 0,
-            options: [.allowUserInteraction],
-            animations: animations,
-            completion: completion
-        )
-    }
-
-    public static func perform(
-        closure: @escaping () -> Void,
-        animated: Bool,
-        completion: ((_ finished: Bool) -> Void)? = nil
-    ) {
-        if animated {
-            animate(closure)
-        } else {
-            closure()
-            completion?(true)
-        }
-    }
-
     // MARK: User Interface
 
     private let stackView = UIStackView()

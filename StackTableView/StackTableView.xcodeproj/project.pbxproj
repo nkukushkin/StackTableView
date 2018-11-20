@@ -22,6 +22,7 @@
 		8322AA24217D0A050012DA8B /* UIColor+OnePixelImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8322AA16217D0A050012DA8B /* UIColor+OnePixelImage.swift */; };
 		8322AA25217D0A050012DA8B /* UIColor+Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8322AA17217D0A050012DA8B /* UIColor+Palette.swift */; };
 		8322AA26217D0A050012DA8B /* StackTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8322AA18217D0A050012DA8B /* StackTableView.swift */; };
+		83D1A9C421A479C600F10A9A /* StackTableViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D1A9C321A479C600F10A9A /* StackTableViewAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		8322AA16217D0A050012DA8B /* UIColor+OnePixelImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+OnePixelImage.swift"; sourceTree = "<group>"; };
 		8322AA17217D0A050012DA8B /* UIColor+Palette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Palette.swift"; sourceTree = "<group>"; };
 		8322AA18217D0A050012DA8B /* StackTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackTableView.swift; sourceTree = "<group>"; };
+		83D1A9C321A479C600F10A9A /* StackTableViewAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTableViewAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			children = (
 				8322AA18217D0A050012DA8B /* StackTableView.swift */,
 				8322AA0D217D0A050012DA8B /* StackTableViewController.swift */,
+				83D1A9C321A479C600F10A9A /* StackTableViewAnimator.swift */,
 				8322AA07217D0A050012DA8B /* Contents */,
 				8322AA0E217D0A050012DA8B /* Decorations */,
 				8322AA12217D0A050012DA8B /* Extensions */,
@@ -229,6 +232,7 @@
 				8322AA24217D0A050012DA8B /* UIColor+OnePixelImage.swift in Sources */,
 				8322AA21217D0A050012DA8B /* UIStackView+MultipleViews.swift in Sources */,
 				8322AA20217D0A050012DA8B /* StackTableViewSpacer.swift in Sources */,
+				83D1A9C421A479C600F10A9A /* StackTableViewAnimator.swift in Sources */,
 				8322AA19217D0A050012DA8B /* StackTableViewBasicCell.swift in Sources */,
 				8322AA26217D0A050012DA8B /* StackTableView.swift in Sources */,
 				8322AA1F217D0A050012DA8B /* StackTableViewSeparator.swift in Sources */,

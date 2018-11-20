@@ -16,7 +16,7 @@ class HideCellExampleSection: StackTableViewSection {
     private func updateUserInterface(animated: Bool) {
         toggleButtonCell.textLabel.text = isHidableCellHidden ? "Show" : "Hide"
 
-        StackTableView.perform(
+        StackTableViewAnimator.perform(
             closure: { [weak self] in
                 guard let `self` = self else { return }
                 self.hidableCell.isHidden = self.isHidableCellHidden
