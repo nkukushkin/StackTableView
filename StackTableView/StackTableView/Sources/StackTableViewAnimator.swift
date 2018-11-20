@@ -27,7 +27,7 @@ public class StackTableViewAnimator {
         completion: ((_ finished: Bool) -> Void)? = nil
     ) {
         if animated {
-            animate(closure)
+            animate(closure, completion: completion)
         } else {
             closure()
             completion?(true)
