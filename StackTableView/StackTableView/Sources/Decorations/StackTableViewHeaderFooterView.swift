@@ -9,7 +9,7 @@ public class StackTableViewHeaderFooterView: UIView {
             whenContainedInInstancesOf: [StackTableViewHeaderFooterView.self]
         )
         label.font = appearance.font ?? .preferredFont(forTextStyle: .footnote)
-        label.textColor = appearance.textColor ?? .stvHeaderFooterTextColor
+        label.textColor = appearance.textColor ?? .stackTableViewHeaderFooterTextColor
         return label
     }()
 
@@ -26,6 +26,8 @@ public class StackTableViewHeaderFooterView: UIView {
         addSubview(textLabel)
         textLabel.constrain(edgesToLayoutGuide: layoutMarginsGuide)
     }
+
+    // MARK: Lifecyle
 
     override init(frame: CGRect) {
         super.init(frame: frame)

@@ -2,11 +2,11 @@ import UIKit
 
 extension UIColor {
     
-    static var stvSeparatorColor: UIColor {
+    static var stackTableViewSeparatorColor: UIColor {
         return UIColor(white: 0, alpha: 0.22)
     }
 
-    static var stvBackgroundColor: UIColor {
+    static var stackTableViewBackgroundColor: UIColor {
         return UIColor(
             red: 239 / 255.0,
             green: 239 / 255.0,
@@ -15,7 +15,7 @@ extension UIColor {
         )
     }
 
-    static var stvHeaderFooterTextColor: UIColor {
+    static var stackTableViewHeaderFooterTextColor: UIColor {
         return UIColor(
             red: 109 / 255.0,
             green: 109 / 255.0,

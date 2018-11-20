@@ -6,9 +6,11 @@ public class StackTableViewSeparator: UIView {
         return CGSize(width: UIView.noIntrinsicMetric, height: 1 / UIScreen.main.scale)
     }
 
+    // MARK: Lifecyle
+
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .stvSeparatorColor
+        backgroundColor = .stackTableViewSeparatorColor
     }
 
     @available(*, unavailable)

@@ -42,7 +42,7 @@ open class StackTableViewSelectableCell: StackTableViewCell {
 
     private lazy var button: UIButton = {
         let button = UIButton()
-        let highlightedImage = UIColor.stvSeparatorColor.asOnePixelImage()
+        let highlightedImage = UIColor.stackTableViewSeparatorColor.asOnePixelImage()
         button.setBackgroundImage(highlightedImage, for: .highlighted)
         button.setBackgroundImage(highlightedImage, for: .selected)
         return button

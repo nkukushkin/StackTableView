@@ -13,6 +13,8 @@ open class StackTableViewBasicCell: StackTableViewSelectableCell {
         textLabel.constrain(edgesToLayoutGuide: contentView.layoutMarginsGuide)
     }
 
+    // MARK: Lifecyle
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUserInterface()

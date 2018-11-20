@@ -1,6 +1,6 @@
 import UIKit
 
-struct EdgeConstraints {
+class EdgeConstraints {
 
     let top: NSLayoutConstraint
     let left: NSLayoutConstraint
@@ -19,13 +19,6 @@ struct EdgeConstraints {
         NSLayoutConstraint.deactivate(all)
     }
 
-    func withPriority(_ priority: UILayoutPriority) -> EdgeConstraints {
-        for constraint in all {
-            constraint.priority = priority
-        }
-        return self
-    }
-
     var insets: UIEdgeInsets {
         get {
             return UIEdgeInsets(
@@ -41,6 +34,20 @@ struct EdgeConstraints {
             bottom.constant = -newInsets.bottom
             right.constant = -newInsets.right
         }
+    }
+
+    // MARK: Initialization
+
+    init(
+        top: NSLayoutConstraint,
+        left: NSLayoutConstraint,
+        bottom: NSLayoutConstraint,
+        right: NSLayoutConstraint
+    ) {
+        self.top = top
+        self.left = left
+        self.bottom = bottom
+        self.right = right
     }
 }
 

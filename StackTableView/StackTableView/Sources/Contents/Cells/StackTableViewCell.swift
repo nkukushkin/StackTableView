@@ -5,7 +5,7 @@ open class StackTableViewCell: UIView {
     // This is needed so that the button on the selectable cell,
     // which is behind the content view, could be tapped.
     // TODO: Handle touches without exposing custom view subclass.
-    public let contentView = STVTouchthroughView()
+    public let contentView = StackTableViewTouchthroughView()
 
     public let separator = StackTableViewSeparator()
 

@@ -44,7 +44,7 @@ open class StackTableView: UIScrollView {
     }
 
     private func setupUserInterface() {
-        backgroundColor = .stvBackgroundColor
+        backgroundColor = .stackTableViewBackgroundColor
         preservesSuperviewLayoutMargins = true
         keyboardDismissMode = .onDrag
         delaysContentTouches = false
