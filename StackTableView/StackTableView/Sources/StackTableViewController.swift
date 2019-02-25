@@ -26,6 +26,8 @@ open class StackTableViewController: UIViewController {
 
     // MARK: Keyboard Observing
 
+    #warning("TODO: keyboardWillChangeFrameNotification")
+
     @objc
     private func keyboardWillShow(notification: Notification) {
         guard
@@ -33,17 +35,19 @@ open class StackTableViewController: UIViewController {
             let keyboardFrame = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect
         else { return }
 
-        let convertedkeyboardFrame = stackTableView.convert(keyboardFrame, from: nil)
+        let convertedKeyboardFrame = stackTableView.convert(keyboardFrame, from: nil)
 
-        let intersection = stackTableView.bounds.intersection(convertedkeyboardFrame)
+        let intersection = stackTableView.bounds.intersection(convertedKeyboardFrame)
         if !intersection.isEmpty {
             stackTableView.contentInset.bottom = intersection.height
+            stackTableView.scrollIndicatorInsets.bottom = intersection.height
         }
     }
 
     @objc
     private func keyboardWillHide(sender _: Notification) {
         stackTableView.contentInset.bottom = 0
+        stackTableView.scrollIndicatorInsets.bottom = 0
     }
 
     private func registerForKeyboardNotifications() {
