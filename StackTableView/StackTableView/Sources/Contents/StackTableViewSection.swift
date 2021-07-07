@@ -140,8 +140,7 @@ extension StackTableViewSection {
         workaround_updateMainStackViewHorizontalLayoutMargins()
     }
 
-    // TODO: Write an explanation.
-    // TODO: Try autolayout debugger https://twitter.com/steipete/status/972847811644547075
+    // See autolayout debugger https://twitter.com/steipete/status/972847811644547075
     private func workaround_updateMainStackViewHorizontalLayoutMargins() {
         mainStackView.layoutMargins.left = layoutMargins.left
         mainStackView.layoutMargins.right = layoutMargins.right

@@ -1,7 +1,5 @@
 # StackTableView
 
-### Work in progress!
-
 This is an experimental attempt to create a `UITableView` alternative with a simpler API.
 
 Here's a quick exmaple of how you create a table using this library:
@@ -27,10 +25,6 @@ class ExampleStackTableViewController: StackTableViewController {
     }
 }
 ```
-
-The view controller will look like this:
-
-[link]
 
 ## Overview
 
@@ -73,22 +67,3 @@ Basic properties of a section are `headerTitle`, `cells`, and `footerTitle`.
 ### Table
 
 The table itself a `UIScrollView` subsclass, just like `UITableView`. You can also use `StackTableViewContoller`, which has built-in functionality for keyboard-avoidance.
-
-## TODO
-
-### Examples
-- Multiple vs single cell selection
-- Hide/show section and cell animations
-
-### Layout
-- UITableView has quirks when it comes to section headers, should StackTableView mimic them?
-
-### Behaviour
-- Deselect cells with animation on viewDidAppear (add a setting for that?)
-
-### Cells
-- Add accessory views (left and right)!
-- Built-in cells
-- Figure out good hierarchy
-- Add TextInput cell
-- Add swipe actions (low priority)

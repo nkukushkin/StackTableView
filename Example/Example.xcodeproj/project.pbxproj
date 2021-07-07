@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8322AA2A217D0BE70012DA8B /* StackTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8322AA29217D0BE70012DA8B /* StackTableView.framework */; };
-		8322AA2C217D17E30012DA8B /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 8322AA2B217D17E30012DA8B /* Readme.md */; };
 		8322AA2F217D1BAC0012DA8B /* SampleTableHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8322AA2E217D1BAC0012DA8B /* SampleTableHeaderFooterView.swift */; };
 		835F7E7920F4F7B60055AD8F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F7E7820F4F7B60055AD8F /* AppCoordinator.swift */; };
 		835F7E7B20F4F8E20055AD8F /* MenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F7E7A20F4F8E20055AD8F /* MenuCoordinator.swift */; };
@@ -27,7 +26,6 @@
 
 /* Begin PBXFileReference section */
 		8322AA29217D0BE70012DA8B /* StackTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StackTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8322AA2B217D17E30012DA8B /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = Readme.md; path = ../Readme.md; sourceTree = "<group>"; };
 		8322AA2E217D1BAC0012DA8B /* SampleTableHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableHeaderFooterView.swift; sourceTree = "<group>"; };
 		835F7E7820F4F7B60055AD8F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		835F7E7A20F4F8E20055AD8F /* MenuCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCoordinator.swift; sourceTree = "<group>"; };
@@ -71,7 +69,6 @@
 		83778CC720DAE4240002945E = {
 			isa = PBXGroup;
 			children = (
-				8322AA2B217D17E30012DA8B /* Readme.md */,
 				83778CD220DAE4240002945E /* Example */,
 				83778CD120DAE4240002945E /* Products */,
 				835F7E7E20F50A4D0055AD8F /* Frameworks */,
@@ -225,7 +222,6 @@
 			files = (
 				83778CDE20DAE4250002945E /* LaunchScreen.storyboard in Resources */,
 				83778CDB20DAE4250002945E /* Assets.xcassets in Resources */,
-				8322AA2C217D17E30012DA8B /* Readme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -30,11 +30,6 @@ class MenuViewController: StackTableViewController {
         return section
     }()
 
-    // MARK: TODO
-    // Basic example?
-    // Hiding animation
-    // Keyboard avoidance
-
     // MARK: Lifecycle
 
     override func viewDidLoad() {

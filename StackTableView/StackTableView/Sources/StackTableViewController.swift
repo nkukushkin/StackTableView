@@ -26,8 +26,6 @@ open class StackTableViewController: UIViewController {
 
     // MARK: Keyboard Observing
 
-    #warning("TODO: keyboardWillChangeFrameNotification")
-
     @objc
     private func keyboardWillShow(notification: Notification) {
         guard

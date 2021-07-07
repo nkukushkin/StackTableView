@@ -8,7 +8,6 @@ class SampleHeaderFooterView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .red
     }
 
     @available(*, unavailable)
