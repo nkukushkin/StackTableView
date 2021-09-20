@@ -1,6 +1,6 @@
 # StackTableView
 
-This is an experimental attempt to create a `UITableView` alternative with a simpler API.
+This is an experimental attempt to create a `UITableView` alternative for building static forms.
 
 Here's a quick exmaple of how you create a table using this library:
 
